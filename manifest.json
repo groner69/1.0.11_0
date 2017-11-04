@@ -1,0 +1,27 @@
+{
+   "background": {
+      "page": "background.html"
+   },
+   "browser_action": {
+      "default_icon": "images/48.png",
+      "default_popup": "popup.html",
+      "default_title": "Web Developer Form Filler"
+   },
+   "content_scripts": [ {
+      "js": [ "javascripts/jquery-1.9.1.min.js", "javascripts/deserialize.js", "javascripts/content_script.js", "javascripts/mousetrap.min.js" ],
+      "matches": [ "http://*/*", "https://*/*", "file:///*" ],
+      "run_at": "document_start"
+   } ],
+   "description": "This extension is used by developers to make it easy to fill forms",
+   "icons": {
+      "128": "images/128.png",
+      "16": "images/16.png",
+      "48": "images/48.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCoIBUgSIvD132vAfyQc3VHgKgtm+YQ8woeRywnIZBV4lCGsXOeAqfGTg/fHirKQepJ94eBTxa3ul4+vGnCmIMPqQ67q3bdfnN+JlPSwR9cDuyzHcubDRiv8odT78ZN1VA0UX50dVlpw7WSwduMU5dU6gGtJ6kU6AaxEl7gFnEg4QIDAQAB",
+   "manifest_version": 2,
+   "name": "Web Developer Form Filler",
+   "permissions": [ "tabs", "http://*/", "https://*/" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.0.11"
+}
